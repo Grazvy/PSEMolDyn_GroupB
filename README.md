@@ -1,16 +1,30 @@
-# Group B
-## Project Information
+# Molecular Dynamics Simulator
 
-**Members:**
-Yuchen Zhao,
-Grazvydas Kuras,
-David Kratz
+As part of our practical course at TUM, we built this project that simulates the 
+physical interactions between simple particles.
 
-[Project Link](https://github.com/Grazvy/PSEMolDyn_GroupB)
+It takes an xml input of the initial state, which can be any layout of particles
+with specific weights and velocities, in 2D or 3D space. The input supports cuboids, 
+spheres and even final states from previous simulations, such as an equilibrium.
 
-**Last commit:** commit-id: 4031c37 or "Merge remote-tracking branch 'origin/master'"
+It supports various boundary types:
 
-**Build/Usage:**
+- **reflective** boundaries contain particles within the domain
+- **outflow** boundaries allow particles to escape 
+- **periodic** boundaries enable interaction with particles on the opposite border
+
+We designed the architecture with focus on scalability, removing interference 
+between threads, to utilize the 56 available threads on the Linux-Cluster, winning 
+us the parallelization-contest within the course.
+
+With this project, we got a first insight into High-Performance-Computing, 
+we learned the basics of numerical simulation and gained valuable experience
+in software engineering.
+
+## Results
+
+
+## Build / Usage
 ```
 mkdir build && cd build
 ccmake ..
@@ -42,10 +56,7 @@ make doc_doxygen
 
 **Notes:**
 Call ./MolSim with no arguments or the -h argument to get a help message about the
-command line arguments and what is being returned by the executable. This file should probably be viewed on GitHub, as some media embeddings might not work in e.g. an IDE. Sadly GitHub only allows to upload videos with less than 10 Mb, therefore most of the videos have a mediocre quality and are relatively short. (This file is only for the front page of Doxygen Documentation and does not contain the Report)
-
-
-
+command line arguments and what is being returned by the executable. 
 
 
 
