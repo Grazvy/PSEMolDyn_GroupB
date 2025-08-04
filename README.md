@@ -22,6 +22,32 @@ we learned the basics of numerical simulation and gained valuable experience
 in software engineering.
 
 ## Results
+### Rayleigh Taylor Instability 3D:
+![](resources/rayleigh_taylor_instability_3D.gif)
+<br></br>
+<br></br>
+### Falling Drop 2D:
+![](resources/falling_drop.gif)
+<br></br>
+<br></br>
+### Crystalization of Argon 3D
+![](resources/super_big.gif):
+<br></br>
+<br></br>
+
+## Code Analysis
+
+<figure>
+    <img src="resources/runtime_linux_cluster.png" width="800">
+</figure>
+
+<figure>
+    <img src="resources/annotated_source_16threads.png" width="800">
+</figure>
+
+<figure>
+    <img src="resources/cache-miss-rate.png" width="800">
+</figure>
 
 
 ## Build / Usage
