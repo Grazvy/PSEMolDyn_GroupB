@@ -1,7 +1,8 @@
 # Molecular Dynamics Simulator
 
 As part of our practical course at TUM, we built this project that simulates the 
-physical interactions between simple particles.
+physical interactions between simple particles. It's fully documented and has 
+extensive testing implemented.
 
 It takes an xml input of the initial state, which can be any layout of particles
 with specific weights and velocities, in 2D or 3D space. The input supports cuboids, 
@@ -19,7 +20,7 @@ us the parallelization-contest within the course.
 
 With this project, we got a first insight into High-Performance-Computing, 
 we learned the basics of numerical simulation and gained valuable experience
-in software engineering.
+in software engineering, such as team coordination and code scalability.
 
 ## Results
 ### Rayleigh Taylor Instability 3D:
